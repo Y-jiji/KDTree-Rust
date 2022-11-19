@@ -20,7 +20,7 @@ unsafe impl<const K: usize, T> Sync for KDTree<K, T> {}
 
 impl<const K: usize, T: Debug + Clone + Send> KDTree<K, T> 
 where T: 'static {
-    /// 构建一棵KD树
+    /// 通过递归算法构建一棵KD树
     pub fn build(mut data: Vec<([f32; K], T)>) -> Option<Box<Self>> {
         if data.is_empty() { return None; }
         let t = thread_rng().gen::<usize>() % K;
