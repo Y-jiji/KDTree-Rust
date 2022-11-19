@@ -117,9 +117,9 @@ struct A {
 
 # phase-3: Fearless Cocurrency with Rust
 
-In phase-3, we will implement a multi-threaded version of our KD-Tree searching. 
+The rust standard library enables programmers to express multi-threading semantic in an elegant way. 
 
-The rust standard library enables expressing multi-threading in an elegant way. 
+In phase-3, we will implement a multi-threaded version of our KD-Tree searching algorithm with the power of `std::thread`. It supposed to be the most effortless phase in this tutorial. 
 
 ## step-1
 
